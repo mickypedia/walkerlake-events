@@ -304,6 +304,9 @@ footer{border-top:1px solid var(--hair);padding:22px 0 32px}
 (function(){
   var track=document.querySelector('.hl .track');if(!track)return;
   var slides=Array.prototype.slice.call(track.children),n=slides.length,i=0,timer=null;
+  for(var j=n-1;j>0;j--){var r=Math.floor(Math.random()*(j+1)),t=slides[j];slides[j]=slides[r];slides[r]=t}
+  slides.forEach(function(el){el.classList.remove('on');track.appendChild(el)});
+  slides[0].classList.add('on');
   function show(k){slides[i].classList.remove('on');i=(k+n)%n;slides[i].classList.add('on')}
   function start(){stop();timer=setInterval(function(){show(i+1)},5000)}
   function stop(){if(timer){clearInterval(timer);timer=null}}
