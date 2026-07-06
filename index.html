@@ -130,6 +130,9 @@ section{padding:63px 0;border-top:1px solid var(--hair)}
   margin:14px auto 0;font-size:clamp(17px,2.1vw,25px);font-weight:700;color:#1A1813}
 .join .jrow:hover{color:#A6552E}
 .join .jrow svg{width:24px;height:24px;flex:none;stroke:#A6552E;fill:none;stroke-width:1.6}
+.join .jalt{font-size:13px;color:#6C6350;margin:6px 0 0}
+.join .jalt a{border-bottom:1px solid #C7AF88}
+.join .jalt a:hover{color:#A6552E}
 .join .jnote{font-size:13px;color:#6C6350;margin:26px 0 0;letter-spacing:.04em}
 
 /* footer */
@@ -262,9 +265,10 @@ footer{border-top:1px solid var(--hair);padding:42px 0}
 <!-- JOIN -->
 <section class="join" id="join"><div class="wrap">
   <p class="slabel" style="text-align:center">Stay in the Loop</p>
-  <a class="jrow" href="calendar.ics">
+  <a class="jrow" href="webcal://walkerlake.events/calendar.ics">
     <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="2.5" x2="8" y2="6.5"/><line x1="16" y1="2.5" x2="16" y2="6.5"/></svg>
     Join the Walker Lake events calendar</a>
+  <p class="jalt"><a href="https://calendar.google.com/calendar/r?cid=webcal%3A%2F%2Fwalkerlake.events%2Fcalendar.ics" rel="noopener">Google Calendar</a> &middot; <a href="calendar.ics" download>Download .ics</a></p>
   <a class="jrow" href="https://form.jotform.com/261866493921064" rel="noopener">
     <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14"/><polyline points="3,6 12,13 21,6"/></svg>
     Sign up for the events newsletter</a>
