@@ -61,6 +61,7 @@ section{padding:63px 0;border-top:1px solid var(--hair)}
 .cause .credit{text-align:center;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#6C6350;margin-top:34px}
 
 /* HIGHLIGHTS — dark carousel */
+.hl{padding-top:53px}
 .hl .hrow{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
 .hl .glabel.hlb{margin:0;color:var(--rust)}
 .hl .nav-b{display:flex;gap:22px}
@@ -81,30 +82,26 @@ section{padding:63px 0;border-top:1px solid var(--hair)}
 @media(max-width:860px){.hl .slide{grid-template-columns:1fr;gap:20px;align-items:start}}
 
 /* ARTISTS — typographic list, light section */
-.artists{background:#F3ECDD;color:#1A1813}
+.artists{background:#F3ECDD;color:#1A1813;padding-top:53px}
 .artists .head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px}
 .artists h2{font-family:"Gotham Display","Gotham","Montserrat","Helvetica Neue",Helvetica,sans-serif;
   font-size:clamp(24px,3.6vw,40px);font-weight:900;letter-spacing:.02em;margin:0;text-transform:uppercase}
 .glabel{font-family:"Gotham Display","Gotham","Montserrat","Helvetica Neue",Helvetica,sans-serif;
   font-size:clamp(16px,1.6vw,20px);letter-spacing:.08em;text-transform:uppercase;color:#A6552E;font-weight:900;margin:32px 0 0}
 .glabel.fblue{color:#33566A}
-.artists .alist{border-top-color:#DFD3BC}
-.artists .arow{border-bottom-color:#DFD3BC}
 .artists .arow .m{color:#6C6350}
 .artists .arow:hover .n{color:#A6552E}
-.artists .alist.fb{border-top-color:rgba(51,86,106,.45)}
-.artists .alist.fb .arow{border-bottom-color:rgba(51,86,106,.45)}
 .artists .alist.fb .arow:hover .n{color:#33566A}
 .head + .glabel{margin-top:30px}
-.alist{margin-top:8px;border-top:1px solid var(--hair)}
-.arow{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:6px 0;border-bottom:1px solid var(--hair)}
+.alist{margin-top:8px}
+.arow{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:3px 0}
 .arow .n{font-size:clamp(21px,3.1vw,32px);font-weight:600;letter-spacing:-.01em}
 .arow .m{font-size:13.5px;color:var(--muted);text-align:right;letter-spacing:.02em;flex:none}
 .arow:hover .n{color:var(--rust)}
 .outnote{margin-top:18px;font-size:14px;color:var(--muted)}
 .outnote b{color:var(--ink);font-weight:600}
 @media(max-width:560px){
-  .arow{flex-direction:column;align-items:flex-start;gap:2px;padding:9px 0}
+  .arow{flex-direction:column;align-items:flex-start;gap:2px;padding:6px 0}
   .arow .m{text-align:left}
   .artists .head{gap:4px}
 }
@@ -127,12 +124,13 @@ section{padding:63px 0;border-top:1px solid var(--hair)}
 .info a.map{color:var(--blue);border-bottom:1px solid var(--blue)}
 
 /* footer */
-footer{border-top:1px solid var(--hair);padding:52px 0}
+footer{border-top:1px solid var(--hair);padding:42px 0}
 .fgrid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;align-items:flex-end}
 .fgrid .w{font-weight:800;letter-spacing:.16em;font-size:14px}
 .fgrid .dom{color:var(--rust);font-weight:700;letter-spacing:.08em;margin-top:4px}
 .fgrid .sm{font-size:13px;color:var(--muted);line-height:1.8;text-align:right}
-.partners{margin-top:26px;padding-top:18px;border-top:1px solid var(--hair);
+.fgrid .sm a:hover{color:var(--rust)}
+.partners{margin-top:16px;padding-top:12px;border-top:1px solid var(--hair);
   font-size:12px;letter-spacing:.08em;color:var(--muted);display:flex;flex-wrap:wrap;gap:8px 24px}
 </style>
 
@@ -252,6 +250,7 @@ footer{border-top:1px solid var(--hair);padding:52px 0}
 <footer><div class="wrap">
   <div class="fgrid">
     <div><div class="w">WALKERLAKE.EVENTS</div></div>
+    <div class="sm"><a href="https://www.instagram.com/walkerlake.events/" rel="noopener">Instagram &middot; @walkerlake.events</a></div>
   </div>
   <div class="partners">
     <span>Presented by The Bighorn Crossing</span>
