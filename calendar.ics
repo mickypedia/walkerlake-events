@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Walker Lake Events//walkerlake.events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Walker Lake Events
+X-WR-CALDESC:Exhibitions and cultural events at Walker Lake\, Nevada.
+X-WR-TIMEZONE:America/Los_Angeles
+BEGIN:VEVENT
+UID:resilience-2026@walkerlake.events
+DTSTAMP:20260706T190000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260801
+SUMMARY:Resilience in the Desert — Walker Lake & Bighorn Sheep
+LOCATION:The Bighorn Crossing\, 847 Frontage Rd\, Walker Lake\, NV 89415
+DESCRIPTION:Free art exhibition — around twenty artists\, all July. Gallery Wed–Sat 11am–7pm · Sun 11am–5pm · outdoor sculpture daily. Details: walkerlake.events
+URL:https://walkerlake.events
+END:VEVENT
+END:VCALENDAR
