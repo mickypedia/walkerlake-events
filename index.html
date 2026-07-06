@@ -110,7 +110,7 @@ section{padding:63px 0;border-top:1px solid var(--hair)}
 #visit{background:var(--bone);border-top:1px solid var(--hair)}
 #visit .slabel,#visit .info dt{color:var(--rust)}
 #visit .slabel{font-size:clamp(17px,1.9vw,22px);margin-top:10px}
-#visit a.map{color:var(--blue);border-bottom:1px solid var(--blue)}
+#visit a.map{color:var(--blue);border-bottom:1px solid var(--blue);font-weight:700;display:inline-block;margin-top:5px}
 #visit .poster-b{border:none;background:none}
 
 .info-wrap{display:grid;grid-template-columns:0.9fr 1.1fr;gap:52px;align-items:center}
@@ -131,7 +131,10 @@ section{padding:63px 0;border-top:1px solid var(--hair)}
 .join .jrow:hover{color:#A6552E}
 .join .jrow svg{width:24px;height:24px;flex:none;stroke:#A6552E;fill:none;stroke-width:1.6}
 .nlform{display:flex;justify-content:center;margin:14px auto 40px;max-width:460px}
-.nlform input{flex:1;min-width:0;padding:13px 16px;font-size:15px;border:1px solid #C7AF88;border-right:none;background:#FFFDF7;color:#1A1813;border-radius:0;outline-color:#A6552E}
+.nlform input{flex:1;min-width:0;padding:13px 16px;font-size:15px;border:1px solid #C7AF88;border-right:none;background:#FFFDF7;color:#1A1813;border-radius:0;color-scheme:light;font-family:inherit}
+.nlform input::placeholder{color:#A3967E}
+.nlform input:focus{outline:none;border-color:#A6552E;background:#FFF}
+.nlform input:-webkit-autofill{-webkit-box-shadow:0 0 0 60px #FFFDF7 inset;-webkit-text-fill-color:#1A1813}
 .nlform button{padding:13px 22px;background:#1A1813;color:#F3ECDD;border:none;border-radius:0;font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:12px;cursor:pointer}
 .nlform button:hover{background:#A6552E}
 .join .jalt{font-size:13px;color:#6C6350;margin:6px 0 0}
@@ -140,7 +143,7 @@ section{padding:63px 0;border-top:1px solid var(--hair)}
 .join .jnote{font-size:13px;color:#6C6350;margin:26px 0 0;letter-spacing:.04em}
 
 /* footer */
-footer{border-top:1px solid var(--hair);padding:32px 0 37px}
+footer{border-top:1px solid var(--hair);padding:22px 0 32px}
 .fgrid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;align-items:flex-end}
 .fgrid .w{font-weight:800;letter-spacing:.16em;font-size:14px}
 .fgrid .dom{color:var(--rust);font-weight:700;letter-spacing:.08em;margin-top:4px}
@@ -260,7 +263,7 @@ footer{border-top:1px solid var(--hair);padding:32px 0 37px}
         <dt>Outdoor</dt><dd>Sculpture on view <b>daily</b></dd>
         <dt>Artist Day</dt><dd>Month-end &mdash; meet the makers</dd>
         <dt>Admission</dt><dd><b>Free</b></dd>
-        <dt>Where</dt><dd>The Bighorn Crossing<br>847 Frontage Rd, Walker Lake, NV 89415<br><a class="map" href="https://maps.google.com/?q=The+Bighorn+Crossing+847+Frontage+Rd+Walker+Lake+NV">Get directions &rarr;</a></dd>
+        <dt>Where</dt><dd>The Bighorn Crossing<br>847 Frontage Rd, Walker Lake, NV 89415<br><a class="map" href="https://maps.google.com/?q=The+Bighorn+Crossing+847+Frontage+Rd+Walker+Lake+NV">Get directions &gt;</a></dd>
       </dl>
     </div>
   </div>
@@ -276,10 +279,9 @@ footer{border-top:1px solid var(--hair);padding:32px 0 37px}
     <input type="email" name="q3_q3_email1" placeholder="Your email" required aria-label="Email">
     <button type="submit">Sign up</button>
   </form>
-  <a class="jrow" href="https://calendar.google.com/calendar/r?cid=http%3A%2F%2Fwalkerlake.events%2Fcalendar.ics" rel="noopener">
-    <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="2.5" x2="8" y2="6.5"/><line x1="16" y1="2.5" x2="16" y2="6.5"/></svg>
-    Join the Walker Lake events calendar</a>
-  <p class="jalt"><a href="webcal://walkerlake.events/calendar.ics">Apple / Outlook</a> &middot; <a href="calendar.ics" download>Download .ics</a></p>
+  <div class="jrow"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="2.5" x2="8" y2="6.5"/><line x1="16" y1="2.5" x2="16" y2="6.5"/></svg>
+    Join the Walker Lake events calendar</div>
+  <p class="jalt"><a href="webcal://walkerlake.events/calendar.ics">Apple Calendar</a> &middot; <a href="https://calendar.google.com/calendar/r?cid=http%3A%2F%2Fwalkerlake.events%2Fcalendar.ics" rel="noopener">Google Calendar</a> &middot; <a href="calendar.ics" download>Download .ics</a></p>
   <p class="jnote">Every show and event, as it&rsquo;s announced &mdash; in your inbox or on your calendar.</p>
 </div></section>
 
